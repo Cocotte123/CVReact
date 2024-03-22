@@ -1,0 +1,101 @@
+
+#fondAccueil {
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.accueil {
+    height: auto;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    margin: auto;
+    
+}
+
+.presentation {
+    height:1000px;
+    color: #EEE;
+    
+    
+}
+
+
+
+.presentation h1 {
+    font-weight: 600;
+    font-size: 84px;
+ 
+}
+
+.presentation h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+#Apropos {
+    padding-top: 30px;
+    width: 85%;
+    /*border: solid;*/
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 5px 5px 5px rgba(68, 68, 68, 0.2) ;
+}
+
+#Apropos h2 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #444;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    /*border-bottom: solid #0d6efd;*/
+}
+
+#Apropos p {
+    font-weight: 400;
+    font-size: 18px;
+    width: 80%;
+    /*margin: auto;
+    padding-top: 20px;*/
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+
+
+.skill {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: auto;
+}
+
+img {
+    max-width : 100%;
+    height : auto;
+    border-radius: 1%;
+}
+
+#Apropos h3 {
+    font-weight: 600;
+    font-size: 25px;
+    color: #444;
+    text-align: left;
+    padding-bottom: 5px;
+    
+}
+
+

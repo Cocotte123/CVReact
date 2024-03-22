@@ -1,0 +1,24 @@
+.accordion h1 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.accordion h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.accordion p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.accordion a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.accordion {
+    width: 85%;
+    margin-top: 30px;
+}

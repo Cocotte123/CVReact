@@ -1,0 +1,58 @@
+#footer {
+    
+    /*background-color: #444;
+    opacity: 0.3;*/
+   font-family: 'Nunito Sans';
+   height: auto;
+   
+  margin-top: 30px;
+  padding-top: 30px;
+   width: 100%;
+   /*position:fixed;*/
+}
+
+#footer h2{
+    font-size: 18px;
+    font-weight: 600;
+    color:#000000;
+}
+
+
+
+#footer p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color:#000000;
+}
+
+#footer li {
+    list-style: none;
+    color:#000000;
+}
+
+#reseauxSociaux a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #444;
+    text-align: center;
+}
+.scrollTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    background-color: #000000;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: red;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+
+  .scrollTop.active {
+    visibility: visible;
+  }
