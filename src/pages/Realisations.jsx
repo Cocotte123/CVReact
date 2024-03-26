@@ -2,6 +2,7 @@ import {useState} from 'react';
 import Footer from "../components/Footer.js";
 import "../style/Realisations.css";
 import Intro from '../components/Intro.js';
+import Helmet from '../components/Helmet.js';
 
 
 const Realisations = () => {
@@ -18,7 +19,9 @@ const Realisations = () => {
 
     return (
         <div className='realisations' class="container-fluid  gx-0">
-            
+            <Helmet
+                title="Réalisations"
+            />
             <div className="introduction" class="row mt-3">
                 {introductions.map((introduction)=>(
                 <Intro introInfo={introduction}/>

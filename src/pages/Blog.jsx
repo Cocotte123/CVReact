@@ -2,6 +2,7 @@ import {useState} from 'react';
 import { Routes, Route, Link} from 'react-router-dom';
 import Intro from '../components/Intro.js';
 import Footer from "../components/Footer.js";
+import Helmet from '../components/Helmet.js';
 
 
 const Blog = () => {
@@ -31,6 +32,9 @@ const Blog = () => {
 
     return (
         <div class="container-fluid  gx-0">
+            <Helmet
+                title="Blog"
+            />
             <div className="introduction" class="row mt-3">
                 {introductions.map((introduction)=>(
                 <Intro introInfo={introduction}/>

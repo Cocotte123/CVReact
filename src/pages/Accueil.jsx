@@ -6,6 +6,7 @@ import background from "../img/hero-bg.jpg";
 import about from "../img/john-doe-about.jpg"
 import {useState} from "react";
 import Progressbar from "../components/Progressbar.js";
+import Helmet from "../components/Helmet.js";
 
 const Accueil = () => {
     const [skills] = useState ([
@@ -22,7 +23,9 @@ const Accueil = () => {
     return (
      
         <div className="accueil" style={{marginBottom:"30px"}}>
-            
+            <Helmet
+                title="Accueil"
+            />
             <section className="presentation" style={{ backgroundImage: `url(${background})`,backgroundSize:"cover", }}>
             <div class="image-overlay" id="fondAccueil">
             <h1>Bonjour, je suis John Doe</h1>

@@ -20,13 +20,15 @@ export default function Footer () {
         
     },[]);
 
-    /*const showButton = () => document.querySelector("#scroll-to-top").classList.add("visible");
-    const hideButton = () => document.querySelector("#scroll-to-top").classList.remove("visible");
-    document.addEventListener("scroll", (e) => window.scrollY < 30000 ? hideButton() : showButton());*/
+    
     window.addEventListener('scroll', function() {
         var scroll = document.querySelector('.scrollTop');
         scroll.classList.toggle("active",window.scrollY > 200)
     });
+
+    const top = () => {
+        window.scrollTo(0,0);
+    }
 
 
 
@@ -83,7 +85,7 @@ export default function Footer () {
 
             </ul>
             </div>
-            <div class="scrollTop">^</div>
+            <div onClick={top} class="scrollTop">^</div>
             <div className="copyright" class="bg-dark">
                 <p class="font-weight-bold text-white text-center">©Designed by John Doe.</p>
             </div>

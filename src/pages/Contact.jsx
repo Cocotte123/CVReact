@@ -4,6 +4,7 @@ import Intro from '../components/Intro.js';
 import background2 from "../img/contact-bg.jpg";
 import { BsFillGeoAltFill, BsPhone } from "react-icons/bs";
 import Footer from "../components/Footer.js";
+import Helmet from '../components/Helmet.js';
 
 
 const Contact = () => {
@@ -15,6 +16,9 @@ const Contact = () => {
     
     return (
         <div class="container-fluid  gx-0">
+            <Helmet
+                title="Contact"
+            />
             <div className="presentation" style={{ backgroundImage: `url(${background2})`,backgroundSize:"cover", }}>
             <div class="image-overlay" id='fondContact'>
             <div class="container rounded" id='contactContainer' >

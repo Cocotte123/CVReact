@@ -3,7 +3,7 @@ import "../style/Legales.css";
 import Intro from '../components/Intro.js';
 import Footer from "../components/Footer.js";
 import { BsFillGeoAltFill, BsPhone, BsEnvelopeFill, BsGlobe } from "react-icons/bs";
-
+import Helmet from '../components/Helmet.js';
 
 
 const Legales = () => {
@@ -14,6 +14,10 @@ const Legales = () => {
     
     return (
         <div class="container-fluid  gx-0" style={{marginBottom:"30px"}}>
+        <Helmet
+                title="Mentions légales"
+                noIndex={true}
+            />
         <div className="introduction" class="row mt-3">
             {introductions.map((introduction)=>(
             <Intro introInfo={introduction}/>

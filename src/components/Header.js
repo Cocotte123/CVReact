@@ -56,7 +56,7 @@ return (
     <Routes>
         <Route path="/" element={<Accueil/>}></Route>
         
-        <Route path="/blog/:id" element={<Blog/>}></Route>
+        <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/#Apropos" element={<Accueil/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/legales" element={<Legales/>}></Route>
