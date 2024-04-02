@@ -1,7 +1,22 @@
-.realisations {
-    text-align: center;
+#realisationsPage {
+    width: 100%;
+    margin: auto;
+    
+}
+
+#realisationCard  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
     
 }
 
 
+#realisationCard .card {
+    display: grid;
+   grid-template-rows: max-content 200px 1fr;
+    box-shadow: 0px 5px 5px 5px rgba(68, 68, 68, 0.2) ;
 
+
+    
+}

@@ -28,6 +28,7 @@ export default function Helmet ({
         <meta name="description" content={metaDescription} />
         <meta name="keywords" content={metaKeyWords} />
         <meta name="robots" content={metaRobots} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         
 
     </Head>

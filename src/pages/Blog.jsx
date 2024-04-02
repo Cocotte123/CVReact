@@ -1,8 +1,8 @@
 import {useState} from 'react';
-import { Routes, Route, Link} from 'react-router-dom';
 import Intro from '../components/Intro.js';
 import Footer from "../components/Footer.js";
 import Helmet from '../components/Helmet.js';
+import "../style/Blog.css";
 
 
 const Blog = () => {
@@ -31,36 +31,40 @@ const Blog = () => {
     console.log(maxId, prevId, anteId);
 
     return (
-        <div class="container-fluid  gx-0">
+        <div id="blogPage" class="container-fluid  gx-0">
             <Helmet
                 title="Blog"
             />
-            <div className="introduction" class="row mt-3">
+            <div className="introductionBlog" class="mt-3">
                 {introductions.map((introduction)=>(
                 <Intro introInfo={introduction}/>
                 ))}
             </div>
             
-            <div className="blog" class="row mt-4 gx-0">
-                {blogs.map((blog)=>(
-            
-            <div class ="card col-lg-4 col-md-4 col-sm-6 text-left card border-light mb-3 mt-3" style={{
-                width:"25rem",}}  key={blog.id}>
-                <img src={blog.image} class="card-img-top"></img>
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">{blog.titre}</h5>
-                <p class="card-text">{blog.description}</p>
+            <div  id="blogCard">
+                <div class="row">
+                    <div class="col cards">
+                        
+                            {blogs.map((blog)=>(
                 
-                
-                <a href="#"  class="btn btn-primary mx-auto mt-auto">Lire la suite</a>
+                                <div class ="card col-lg-4 col-md-4 col-sm-6 text-left card border-light mb-3 mt-3" style={{
+                                    width:"25rem",}}  key={blog.id}>
+                                    <img src={blog.image} class="card-img-top"></img>
+                                    <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">{blog.titre}</h5>
+                                    <p class="card-text">{blog.description}</p>
+                                    
+                                    
+                                    <a href="#"  class="btn btn-primary mx-auto mt-auto">Lire la suite</a>
+                                    </div>
+                                    <div class="card-footer text-muted">{blog.info}</div>
+                    
+                                </div>
+                            ))}  </div>
+                        
+                    </div>
                 </div>
-                <div class="card-footer text-muted">{blog.info}</div>
-  
-            </div>
-             ))}
-
             
-             </div>
              
              <Footer />
  

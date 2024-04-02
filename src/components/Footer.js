@@ -33,11 +33,11 @@ export default function Footer () {
 
 
     return (
-        <div  className="footer" id="footer" class="bg-light">
-        <footer class="container-fluid row">
-            <div class ="col-lg-3 col-md-4 col-sm-6">
+        <div id="footerCadre" class="bg-light">
+        <footer  class="container-fluid">
+            <div class="footer-col">
                 <h2 class="text-left fw-bolder">John Doe</h2>
-               <address class="lh-base" >
+               <address>
                 <p class="text-left">40 Rue Laure Diebold</p>
                 <p class="text-left">69009 Lyon, France</p>
                 <p class="text-left">Téléphone: 06 20 30 40 50</p>
@@ -48,7 +48,7 @@ export default function Footer () {
                 <a href="#"><AiFillTwitterSquare /></a>
                 </div>
             </div>
-            <div className="pages" class ="col-lg-3 col-md-4 col-sm-6">
+            <div className="pagesFooter" class="footer-col">
             <h2 class="text-left fw-bolder">Liens utiles</h2>
             <ul class="lh-base">
                 <li class="nav-item text-left">
@@ -68,28 +68,29 @@ export default function Footer () {
                 </li>
             </ul>
             </div>
-            <div className="realisations" class ="col-lg-3 col-md-4 col-sm-6">
+            <div className="realisationsFooter" class="footer-col">
             <h2 class="text-left fw-bolder">Mes dernières réalisations</h2>
             <ul >
                 <li class="nav-item text-left">
-                <Link class="nav-link" to={'/blog/' + 6}>Réalisations</Link>
+                <Link class="nav-link" to={'/blog/' + 6}><FcNext />Réalisations</Link>
                 </li>
             </ul>
             </div>
-            <div className="blog" class ="col-lg-3 col-md-4 col-sm-6">
+            <div className="blogFooter" class="footer-col">
             <h2 class="text-left fw-bolder">Mes derniers articles</h2>
             <ul >
                 <li class="nav-item text-left">
-                    <Link class="nav-link" to="/blog">Blog</Link>
+                    <Link class="nav-link" to="/blog"><FcNext style={{fontWeight:"bold"}} />Blog</Link>
                 </li>
 
             </ul>
             </div>
-            <div onClick={top} class="scrollTop">^</div>
-            <div className="copyright" class="bg-dark">
-                <p class="font-weight-bold text-white text-center">©Designed by John Doe.</p>
+            <div onClick={top} className="scrollTop">^</div>
+            <div id="copyright" class="bg-dark">
+                <p class="font-weight-bold text-white">©Designed by John Doe.</p>
             </div>
         </footer>
+        
         
     
         </div>

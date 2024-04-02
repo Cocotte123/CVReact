@@ -20,7 +20,7 @@ const navLinkStyles = ({isActive}) => {
 }
 
 return (
-    <div className="header" id="header">
+    <div id="header">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark text-uppercase fw-bolder" >
         <div class="container-fluid">
             <div class="navbar-brand">JOHN DOE</div>

@@ -18,31 +18,34 @@ const Realisations = () => {
     ])
 
     return (
-        <div className='realisations' class="container-fluid  gx-0">
+        <div id="realisationsPage" class="container-fluid  gx-0">
             <Helmet
                 title="Réalisations"
             />
-            <div className="introduction" class="row mt-3">
+            <div className="introductionRealisations" class="mt-3">
                 {introductions.map((introduction)=>(
                 <Intro introInfo={introduction}/>
                 ))}
             </div>
-           
-            <div className="realisation" class="row mt-3 gx-0">
-                {realisations.map((realisation)=>(
-                <div class ="card col-lg-4 col-md-4 col-sm-6 text-left card border-light mb-3 mt-3" style={{
-                    width:"25rem",}}>
-                    <img src={realisation.image} class="card-img-top"></img>
-                    <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">{realisation.titre}</h5>
-                    <p class="card-text">{realisation.description}</p>
+            <div  id="realisationCard" >
+                <div  class="row">
                     
-                    <a href="#"  class="btn btn-outline-primary mx-auto mt-auto">Voir</a>
-                    </div>
-                    <div class="card-footer text-muted">{realisation.info}</div>
-      
+                        <div class="col cards">
+                            {realisations.map((realisation)=>(
+                            <div class ="card text-left border-light mb-3 mt-3" key={realisation.id}>
+                                <img src={realisation.image} class="card-img-top"></img>
+                                <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">{realisation.titre}</h5>
+                                <p class="card-text">{realisation.description}</p>
+                                
+                                <a href="#"  class="btn btn-outline-primary mx-auto mt-auto">Voir</a>
+                                </div>
+                                <div class="card-footer text-muted">{realisation.info}</div>
+                
+                            </div>
+                        ))}</div>
+                    
                 </div>
-                 ))}
             </div>
             <Footer />
         </div>
@@ -58,4 +61,8 @@ export default Realisations;
             <h1>PORTFOLIO</h1>
             <p class="font-weight-normal" style={{fontSize:"24px"}} >Voici quelques-unes de mes réalisations</p>
             <hr style={{backgroundColor: "#0d6efd",height: "5px", width:"15%", margin:"auto",}} ></hr>
-            </div>*/
+            </div>
+            
+            
+<div id="cardContainer" class="row justify-content-center"> 
+            */

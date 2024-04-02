@@ -1,8 +1,10 @@
 import {useState} from 'react';
+
 import Intro from '../components/Intro.js';
 import "../style/Services.css";
 import Footer from "../components/Footer.js";
 import Helmet from '../components/Helmet.js';
+import { BsSearch, BsDisplay, BsFileCodeFill } from "react-icons/bs";
 
 const Services = () => {
 
@@ -17,31 +19,33 @@ const Services = () => {
     ])
 
     return (
-        <div class="container-fluid row gx-0" style={{marginBottom:"30px"}}>
+        <div id="servicesPage" style={{marginBottom:"30px"}}>
         <Helmet
                 title="Services"
             />
-        <div className="introduction" class="mt-3">
+        <div className="introductionServices" class="mt-3">
             {introductions.map((introduction)=>(
             <Intro introInfo={introduction}/>
             ))}
         </div>
-        <div className="service" class="row mt-4 gx-0">
-                {services.map((service)=>(
-         
-            <div class ="card col-lg-4 col-md-4 col-sm-6 text-center card border-light mb-3 mt-3  vertical-center" style={{
-            width:"25rem",}}>
-            <img src={service.image} class="card-img-top" style={{width:"40px", height:"40px", margin:"auto", paddingTop:"5px"}}></img>
-            <div class="card-body d-flex flex-column">
-            <h5 class="card-title">{service.titre}</h5>
-            <p class="card-text">{service.description}</p>
-            
-            
-            </div>
+        <div  id="serviceCard" >
+                <div class="row">
+                    <div class="col cards">
+                        {services.map((service)=>(
+                
+                    <div class ="card text-center card border-light mb-3 mt-3  vertical-center" >
+                    <img src={service.image} class="card-img-top" style={{width:"40px", height:"40px", margin:"auto", paddingTop:"5px"}}></img>
+                        <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">{service.titre}</h5>
+                        <p class="card-text">{service.description}</p>
+                        </div>
+                    
+                    </div>
+                    ))}</div>
+                </div>
+                
             
         </div>
-         ))}
-         </div>
         <Footer />
         </div>
 

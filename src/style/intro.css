@@ -1,0 +1,19 @@
+#intro {
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    
+
+}
+
+#intro img {
+    width: 100%;
+}
+
+#intro p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 15px;
+}

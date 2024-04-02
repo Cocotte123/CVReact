@@ -22,7 +22,7 @@ const Accueil = () => {
 
     return (
      
-        <div className="accueil" style={{marginBottom:"30px"}}>
+        <div className="Accueil" style={{marginBottom:"30px"}}>
             <Helmet
                 title="Accueil"
             />
@@ -31,24 +31,24 @@ const Accueil = () => {
             <h1>Bonjour, je suis John Doe</h1>
             <h2>Développeur web full stack</h2>
            
-            <Link to="#Apropos" class="btn btn-primary" >En savoir plus</Link>
+            <Link to="#AproposCadre" class="btn btn-primary" type="button" >En savoir plus</Link>
             </div>
 
             </section>
            
 
-           <section id="Apropos" class="container row">
-           <div class ="col-lg-6">
-            <div class="gauche">
+           <section id="AproposCadre" class="container col-lg-6">
+           <div className="gauche">
            <h2>A propos</h2>
-           <hr style={{backgroundColor: "#0d6efd",height: "5px",paddingLeft:"20px",}} ></hr>
+           
            <p>Passionné par l'informatique et les nouvelles technologies, j'ai suivi une formation d'<strong>intégrateur développeur web</strong> au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du <strong>développement web</strong>.</p>
            <p>Basé à Lyon, je suis en recherchhe d'une alternance au sein d'une agence digitale pour consolider ma formation de <strong>développeur web full stack</strong>.</p>
            <p>J'accorde une attention particulière à la qualité du code que j'écris et je respecte les bonnes pratiques du web. </p>
+           
            </div>
-           </div>
-           <div class ="col-lg-6">
-           <img src={about} alt="photo de John Doe"></img>
+
+           <div className="droit">
+           <img src={about}  alt="photo de John Doe"></img>
           
            <h3>Mes compétences:</h3>
             <div className="skill">
@@ -57,10 +57,11 @@ const Accueil = () => {
                 ))}
             </div>
             </div>
+            
             </section> 
           
             
-        <Footer />    
+            <Footer />
         </div>
        
 
