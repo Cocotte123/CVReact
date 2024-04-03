@@ -16,4 +16,7 @@
     justify-content: center;
     margin: auto;
     padding-bottom: 15px;
+    border-bottom: solid 3px;
+   
+    border-bottom-color: blue;
 }

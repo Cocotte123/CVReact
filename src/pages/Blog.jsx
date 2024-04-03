@@ -54,8 +54,9 @@ const Blog = () => {
                                     <h5 class="card-title">{blog.titre}</h5>
                                     <p class="card-text">{blog.description}</p>
                                     
-                                    
-                                    <a href="#"  class="btn btn-primary mx-auto mt-auto">Lire la suite</a>
+                                    <div class="text-left">
+                                        <a href="#"  class="btn btn-primary  mx-auto">Lire la suite</a>
+                                    </div>
                                     </div>
                                     <div class="card-footer text-muted">{blog.info}</div>
                     

@@ -50,7 +50,10 @@
 
 .form h2 {
     border-bottom: solid 3px blue;
+    font-weight: bold;
 }
+
+
 
 #btnForm {
     justify-content: center;
@@ -63,6 +66,7 @@
 
 .map h2 {
     border-bottom: solid 3px blue;
+    font-weight: bold;
 }
 
 
