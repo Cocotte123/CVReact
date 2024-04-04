@@ -1,6 +1,6 @@
 
 #fondAccueil {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     
     background-color: rgba(0, 0, 0, 0.3);
@@ -23,7 +23,8 @@
 .presentation {
     height:1000px;
     color: #EEE;
-    
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
     
 }
 
@@ -33,6 +34,7 @@
     font-weight: 600;
     font-size: 84px;
     padding-bottom: 40px;
+    line-height: 100%;
  
 }
 
@@ -62,6 +64,7 @@
     padding-right: 30px;
     padding-bottom: 50px;
     gap: 5%;
+    
 }
 
 .gauche {
@@ -87,9 +90,7 @@
     /*margin: auto;
     padding-top: 20px;*/
     padding-bottom: 5px;
-    
-    
-
+  
 }
 
 .gauche strong {
@@ -122,6 +123,120 @@
     
 }
 
+
+
+@media screen and (max-width: 900px) {
+    .presentation {
+        height:500px;
+        color: #EEE;
+        background-image: url(../img/hero-bg-tablette.jpg);
+        background-size: cover;
+    
+    }
+
+    .presentation h1 {
+       
+        font-size:4.5em;
+        text-align: center;
+        /*padding-bottom: 40px;*/
+     
+    }
+
+    .presentation h2 {
+       
+        font-size:2.5em;
+        /*text-align: center;
+        padding-bottom: 40px;*/
+     
+    }
+
+    #AproposCadre {
+        width: 90%;
+        padding-left: 15px;
+        
+    }
+
+    .gauche h2 {
+        font-size: 30px;
+        
+    }
+
+    .gauche p {
+       
+        font-size: 16px;
+        width: 100%;   
+    }
+
+    .droit h3 {
+        font-size: 20px;
+        padding-bottom: 3px;
+    }
+
+    .skill {
+        margin-top: 10px;
+        
+    }
+  }
+
+ 
+
+  @media screen and  (max-width: 500px) {
+    .presentation {
+        height:400px;
+        color: #EEE;
+        background-image: url(../img/hero-bg-mobile.jpg);
+        background-size: cover;
+    
+    }
+
+    .presentation h1 {
+       
+        font-size:2.5em;
+        text-align: center;
+        /*padding-bottom: 40px;*/
+     
+    }
+
+    .presentation h2 {
+       
+        font-size:1.5em;
+        /*text-align: center;
+        padding-bottom: 40px;*/
+     
+    }
+
+    #AproposCadre {
+        width: 100%;
+        padding-left: 15px;
+        box-shadow: 0px 5px 0px rgba(68, 68, 68, 0.2) ;
+        flex-wrap: wrap;
+    }
+
+    .gauche h2 {
+        font-size: 20px;
+        
+    }
+
+    .gauche p {
+       
+        font-size: 14px;
+        width: 100%;   
+    }
+
+    .droit {
+        padding-left: 15px;
+    }
+
+    .droit h3 {
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+
+    .skill {
+        margin-top: 5px;
+        
+    }
+  }
 
 
 

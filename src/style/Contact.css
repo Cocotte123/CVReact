@@ -51,6 +51,7 @@
 .form h2 {
     border-bottom: solid 3px blue;
     font-weight: bold;
+    font-size: 36px;
 }
 
 
@@ -67,7 +68,35 @@
 .map h2 {
     border-bottom: solid 3px blue;
     font-weight: bold;
+    font-size: 36px;
 }
 
 
+
+@media screen and (max-width: 900px) {
+    .contactContainer {
+        width: 90%;
+    }
+}
+
+
+
+@media screen and  (max-width: 500px) {
+    .contactContainer {
+        width: 85%;
+    }
+
+    #detailContact {
+        flex-wrap: wrap;
+    }
+
+    .form {
+        padding-right: 15px;
+    }
+
+    .map {
+        padding-left: 15px;
+    }
+
+}
 

@@ -8,8 +8,8 @@ export default function Intro (props) {
         <div id="intro" style={{marginTop:"0"}}>
             <img src={props.introInfo.image} class="img-fluid"></img>
             <div style={{textAlign:"center", marginBottom:"30px", marginTop:"30px"}} >
-            <h1 style={{fontSize:"48px", fontWeight:"600", color:"black"}}>{props.introInfo.titre}</h1>
-            <p class="font-weight-normal" style={{fontSize:"18px", textAlign:"center"}} >{props.introInfo.texte}</p>
+            <h1 style={{fontWeight:"600", color:"black"}}>{props.introInfo.titre}</h1>
+            <p class="font-weight-normal" style={{textAlign:"center"}} >{props.introInfo.texte}</p>
             
             </div>
 

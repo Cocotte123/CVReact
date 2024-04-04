@@ -50,40 +50,20 @@ export default function Footer () {
             </div>
             <div className="pagesFooter" class="footer-col">
             <h2 class="text-left fw-bolder">Liens utiles</h2>
-            <ul class="lh-base">
-                <li class="nav-item text-left">
-                    <Link class="nav-link" to="/"><FcNext />Accueil</Link>
-                </li>
-                <li class="nav-item text-left">
-                    <Link class="nav-link" to="/#Apropos"><FcNext />A propos</Link>
-                </li>
-                <li class="nav-item text-left">
-                    <Link class="nav-link" to="/services"><FcNext />Services</Link>
-                </li>
-                <li class="nav-item text-left">
-                    <Link class="nav-link " to="/contact"><FcNext />Me contacter</Link>
-                </li>
-                <li class="nav-item text-left">
-                    <Link class="nav-link" to="/legales"><FcNext />Mentions légales</Link>
-                </li>
-            </ul>
+            <Link class="nav-link" to="/"><FcNext />Accueil</Link>
+            <Link class="nav-link" to="/#Apropos"><FcNext />A propos</Link>
+            <Link class="nav-link" to="/services"><FcNext />Services</Link>
+            <Link class="nav-link " to="/contact"><FcNext />Me contacter</Link>
+            <Link class="nav-link" to="/legales"><FcNext />Mentions légales</Link>
+            
             </div>
             <div className="realisationsFooter" class="footer-col">
             <h2 class="text-left fw-bolder">Mes dernières réalisations</h2>
-            <ul >
-                <li class="nav-item text-left">
-                <Link class="nav-link" to={'/blog/' + 6}><FcNext />Réalisations</Link>
-                </li>
-            </ul>
+            <Link class="nav-link" to={'/blog/' + 6}><FcNext />Réalisations</Link>
             </div>
             <div className="blogFooter" class="footer-col">
             <h2 class="text-left fw-bolder">Mes derniers articles</h2>
-            <ul >
-                <li class="nav-item text-left">
-                    <Link class="nav-link" to="/blog"><FcNext style={{fontWeight:"bold"}} />Blog</Link>
-                </li>
-
-            </ul>
+            <Link class="nav-link" to="/blog"><FcNext style={{fontWeight:"bold"}} />Blog</Link>
             </div>
             <div onClick={top} className="scrollTop">^</div>
             <div id="copyright" class="bg-dark">

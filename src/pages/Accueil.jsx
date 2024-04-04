@@ -2,7 +2,7 @@ import "../style/Accueil.css";
 import Footer from "../components/Footer.js";
 import {HashLink as Link} from "react-router-hash-link";
 
-import background from "../img/hero-bg.jpg";
+
 import about from "../img/john-doe-about.jpg"
 import {useState} from "react";
 import Progressbar from "../components/Progressbar.js";
@@ -26,7 +26,7 @@ const Accueil = () => {
             <Helmet
                 title="Accueil"
             />
-            <section className="presentation" style={{ backgroundImage: `url(${background})`,backgroundSize:"cover", }}>
+            <section className="presentation" >
             <div class="image-overlay" id="fondAccueil">
             <h1>Bonjour, je suis John Doe</h1>
             <h2>Développeur web full stack</h2>

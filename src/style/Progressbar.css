@@ -1,9 +1,20 @@
 .progress-bar {
-    
-    
     margin-bottom: 10px;
-    
-   /* display: flex;*/
+}
+
+.progress-bar h4 {
+    font-size:15px;
 
 }
 
+@media screen and (max-width: 900px) {
+    .progress-bar h4 {
+        font-size:12px;
+    }
+}
+
+@media screen and  (max-width: 500px) {
+    .progress-bar h4 {
+        font-size:10px;
+    }
+}

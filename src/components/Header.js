@@ -21,7 +21,7 @@ const navLinkStyles = ({isActive}) => {
 
 return (
     <div id="header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-uppercase fw-bolder" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase fw-bolder" >
         <div class="container-fluid">
             <div class="navbar-brand">JOHN DOE</div>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
