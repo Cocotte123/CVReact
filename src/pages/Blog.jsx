@@ -5,6 +5,8 @@ import Helmet from '../components/Helmet.js';
 import "../style/Blog.css";
 
 
+
+
 const Blog = () => {
     const [blogs] = useState([
         {id: 6, image: require('../img/blog/coder.jpg'), description: "Some quick example text to buildon the card and make up the bulk of the card's content", titre: 'Coder son site en HTML/CSS', info: 'Publié le 22 août 2022'},
@@ -26,10 +28,7 @@ const Blog = () => {
     
     const prevId = maxId-1;
     const anteId = maxId-2;
-    
-
-    console.log(maxId, prevId, anteId);
-
+  
     return (
         <div id="blogPage" class="container-fluid  gx-0">
             <Helmet
@@ -41,14 +40,14 @@ const Blog = () => {
                 ))}
             </div>
             
-            <div  id="blogCard">
+            <div   id="blogCard">
                 <div class="row">
                     <div class="col cards">
                         
                             {blogs.map((blog)=>(
                 
                                 <div class ="card text-left border-light mb-3 mt-3"  key={blog.id}>
-                                    <img src={blog.image} class="card-img-top"></img>
+                                    <img src={blog.image} alt={blog.titre} class="card-img-top"></img>
                                     <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">{blog.titre}</h5>
                                     <p class="card-text">{blog.description}</p>
@@ -63,17 +62,18 @@ const Blog = () => {
                             ))}  </div>
                         
                     </div>
-                </div>
+            </div >
             
              
              <Footer />
- 
+        
         </div>
 
     )
 }
 
 export default Blog;
+
 
 
 /*<Link to={`/blog/${maxId}`} className='text-blue-600 underline'>{maxId}</Link>*/

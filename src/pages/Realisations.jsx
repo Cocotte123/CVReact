@@ -33,7 +33,7 @@ const Realisations = () => {
                         <div class="col cards">
                             {realisations.map((realisation)=>(
                             <div class ="card text-left border-light mb-3 mt-3" key={realisation.id}>
-                                <img src={realisation.image} class="card-img-top"></img>
+                                <img src={realisation.image} alt={realisation.titre} class="card-img-top"></img>
                                 <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">{realisation.titre}</h5>
                                 <p class="card-text">{realisation.description}</p>
@@ -54,15 +54,3 @@ const Realisations = () => {
 }
 
 export default Realisations;
-
-
-/* <img src={banner} class="img-fluid"></img>
-            <div style={{textAlign:"center",}} >
-            <h1>PORTFOLIO</h1>
-            <p class="font-weight-normal" style={{fontSize:"24px"}} >Voici quelques-unes de mes réalisations</p>
-            <hr style={{backgroundColor: "#0d6efd",height: "5px", width:"15%", margin:"auto",}} ></hr>
-            </div>
-            
-            
-<div id="cardContainer" class="row justify-content-center"> 
-            */

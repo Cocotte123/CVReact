@@ -9,6 +9,8 @@ import Realisations from '../pages/Realisations';
 import Services from '../pages/Services';
 
 
+
+
 export default function Header () {
 
 const navLinkStyles = ({isActive}) => {
@@ -55,15 +57,16 @@ return (
 
     <Routes>
         <Route path="/" element={<Accueil/>}></Route>
-        
         <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/#Apropos" element={<Accueil/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/legales" element={<Legales/>}></Route>
         <Route path="/realisations" element={<Realisations/>}></Route>
         <Route path="/services" element={<Services/>}></Route>
+        
 
     </Routes>
     </div>
 );
 }
+

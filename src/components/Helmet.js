@@ -1,7 +1,5 @@
 import React from "react";
 import Head from "react-helmet";
-/*import icon from "../img/apple-touch-icon.png";*/
-
 const mainKeyWords = "website, devolpment, html, css, react, javascript"
 const mainTitle = "John Doe"
 const mainDescription = "Site officiel"
@@ -18,7 +16,6 @@ export default function Helmet ({
     const metaTitle = title + "-" + mainTitle
     const metaDescription = mainDescription
     const metaKeyWords = mainKeyWords
-    /*const metaIcon = icon*/
     const metaRobots = noIndex ? "noindex, nofollow" : "index, follow"
 
     return <Head>
@@ -35,5 +32,3 @@ export default function Helmet ({
 
 }
 
-
-/*<link rel="icon" content={metaIcon} />*/

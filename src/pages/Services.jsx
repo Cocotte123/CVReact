@@ -1,5 +1,4 @@
 import {useState} from 'react';
-
 import Intro from '../components/Intro.js';
 import "../style/Services.css";
 import Footer from "../components/Footer.js";
@@ -17,10 +16,6 @@ const Services = () => {
             const [introductions] = useState ([
         {titre: "MON OFFRE DE SERVICES", texte:"Voici les prestations sur lesquelles je peux intervenir", image:require ('../img/banner.jpg')}
     ])
-
-    
-
-   
 
     return (
         <div id="servicesPage" style={{marginBottom:"30px"}}>
@@ -57,7 +52,3 @@ const Services = () => {
 }
 
 export default Services;
-
-/*{services.map((service)=>(
-                <p>{service.service}</p>
-                ))}*/

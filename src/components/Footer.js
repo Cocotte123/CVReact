@@ -1,9 +1,7 @@
 import React from "react";
 import { Link} from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
 import "../style/Footer.css";
 import { FcNext } from "react-icons/fc";
-import Blog from '../pages/Blog';
 import { AiFillLinkedin,AiOutlineGithub,AiFillTwitterSquare } from "react-icons/ai";
 import {useState, useEffect} from 'react';
 
@@ -29,6 +27,7 @@ export default function Footer () {
     const top = () => {
         window.scrollTo(0,0);
     }
+   
 
 
 
@@ -44,14 +43,14 @@ export default function Footer () {
                 </address>
                 <div id="reseauxSociaux">
                 <a href={items.html_url} target="_blank"><AiOutlineGithub /></a>
-                <a href="#" target="_blank"><AiFillLinkedin /></a>
+                <a href="#" target="_blank" rel="noreferrer"><AiFillLinkedin /></a>
                 <a href="#"><AiFillTwitterSquare /></a>
                 </div>
             </div>
             <div className="pagesFooter" class="footer-col">
             <h2 class="text-left fw-bolder">Liens utiles</h2>
             <Link class="nav-link" to="/"><FcNext />Accueil</Link>
-            <Link class="nav-link" to="/#Apropos"><FcNext />A propos</Link>
+            <Link class="nav-link" to="/#AproposCadre"><FcNext />A propos</Link>
             <Link class="nav-link" to="/services"><FcNext />Services</Link>
             <Link class="nav-link " to="/contact"><FcNext />Me contacter</Link>
             <Link class="nav-link" to="/legales"><FcNext />Mentions légales</Link>
@@ -63,7 +62,7 @@ export default function Footer () {
             </div>
             <div className="blogFooter" class="footer-col">
             <h2 class="text-left fw-bolder">Mes derniers articles</h2>
-            <Link class="nav-link" to="/blog"><FcNext style={{fontWeight:"bold"}} />Blog</Link>
+            <Link class="nav-link"><FcNext style={{fontWeight:"bold"}} />Blog</Link>
             </div>
             <div onClick={top} className="scrollTop">^</div>
             <div id="copyright" class="bg-dark">

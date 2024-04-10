@@ -1,8 +1,6 @@
 import "../style/Accueil.css";
 import Footer from "../components/Footer.js";
 import {HashLink as Link} from "react-router-hash-link";
-
-
 import about from "../img/john-doe-about.jpg"
 import {useState} from "react";
 import Progressbar from "../components/Progressbar.js";
@@ -17,9 +15,6 @@ const Accueil = () => {
         {id: 5, skill: "REACT", level: 50, color: "blue"},
        
     ]);
-    
-
-
     return (
      
         <div className="Accueil" style={{marginBottom:"30px"}}>
@@ -69,6 +64,3 @@ const Accueil = () => {
 }
 
 export default Accueil;
-
-/*<div class="progress-bar" role="progressbar" aria-valuenow={skill.level} aria-valuemin="0" aria-valuemax="100">{skill.skill} - {skill.level}% </div>*/
-
